@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="me.jpg" alt="Oumaima">
+        <h1>Hello, I'm Oumaima Bouras </h1>
+        <p>Designer / web Development  </p>
+        <a href="mailto:oumaimabourass254@gmail.com">Contact-me</a>
+    </header>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li> Adobe Creative</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Welcome to my portfolio! I am a passionate graphic designer with a flair for creating visually stunning and functional designs. My style is a blend of modern aesthetics, vibrant colors, and dynamic shapes, always aiming to deliver a memorable user experience.</p>
+        
+        <div class="project-grid">
+            <div class="project">
+                <img src="49.jpg" alt="Project 1">
+                <div class="project-info">
+                    <h3>Project 1 - Depressless</h3>
+                    <p>This mobile app is designed to help users manage stress and anxiety. I handled the entire design process, from conceptualization to the final UI/UX.</p>
+                    <a href="https://www.behance.net/gallery/204706099/Campagne-de-sensibilisation-sur-la-dprression" class="project-link" target="_blank">Learn more</a>
+                </div>
+            </div>
+    
+            <div class="project">
+                <img src="oum.jpg" alt="Project 2">
+                <div class="project-info">
+                    <h3>Project 2 - Oumaima And her integration into school</h3>
+                    <p>A book of tales that will play the role of a guide for children to integrate into social life in school through a playful way.</p>
+                    <a href="https://www.behance.net/gallery/185056841/Conception-ditoriale" class="project-link" target="_blank">Learn more</a>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <div class="background-animation">
+        <div class="circle"></div>
+        <div class="triangle"></div>
+        <div class="circle small"></div>
+        <div class="triangle small"></div>
+    </div>
+    
+
+    <footer>
+        <p>&copy; 2024 Oumaima. All rights reserved..</p>
+        <div class="social">
+            <a href="https://www.behance.net/oumaimabouras" target="_blank"><i class="fab fa-behance"></i> Behance </a>
+            <a href="https://github.com/oumaimabrs25" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.linkedin.com/in/oumaima-bouras-a58398244/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
+        
+    </footer>
+
+    <script src="script.js"> </script>
+
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<div id="particles-js"></div>
+
+<div class="video-background">
+    <video autoplay muted loop id="bgVideo">
+        <source src="background.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la vidéo en arrière-plan.
+    </video>
+</div>
+
+<style>
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#bgVideo {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+</style>
+
+    
+    
+</body>
+</html>

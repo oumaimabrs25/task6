@@ -1,0 +1,237 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #00ADB5, #3A0CA3, #FFD600);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #EEEEEE;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+    width: 80%;
+    transition: transform 0.3s ease;
+}
+
+header:hover {
+    transform: scale(1.05);
+}
+
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1rem;
+    border: 3px solid #FEECB3;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #EEEEEE;
+}
+
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.skills li {
+    background-color: #3A0CA3;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.skills li:hover {
+    background-color: #FFD600;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Pour que les particules soient en arrière-plan */
+}
+
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #6e44ff, #c879ff);
+    color: #fff;
+}
+
+#projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#projects p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #ffeb3b;
+}
+
+
+.background-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circle, .triangle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    animation: move 15s infinite;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 20%;
+    left: 40%;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid rgba(255, 255, 255, 0.1);
+    top: 50%;
+    left: 60%;
+}
+
+.circle.small {
+    width: 50px;
+    height: 50px;
+    top: 70%;
+    left: 20%;
+}
+
+.triangle.small {
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid rgba(255, 255, 255, 0.1);
+    top: 80%;
+    left: 80%;
+}
+
+@keyframes move {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        transform: translate(50px, 50px) rotate(180deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    width: 80%;
+    margin-top: 2rem;
+   
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social a {
+    margin: 0 1rem;
+    color: #FFD600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #EEEEEE;
+}
